@@ -1,0 +1,375 @@
+:root {
+  --text-color: #434455;
+  --highlight-color: #4d5ae5;
+  --background-color: #2e2f42;
+  --button-clicked: #2f0fe7;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* General Styles */
+
+/* HEADER SECTION */
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: #2e2f42;
+  letter-spacing: 0.54px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar-links {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #434455;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-link:hover {
+  color: var(--button-clicked);
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 72px;
+}
+.contact-info :hover {
+  color: var(--button-clicked);
+}
+.contact-info-link {
+  text-decoration: none;
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+}
+
+/* END OF HEADER SECTION */
+
+/* MAIN */
+.main-content-area {
+  background-image: url("/images/people-office.jpg");
+  background-size: cover;
+  width: 1440;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  isolation: isolate;
+}
+.main-content-area::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--background-color);
+  opacity: 0.7;
+}
+
+.content-area {
+  position: relative;
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1.12px;
+  padding-top: 120px;
+  padding-top: 120px;
+}
+
+/* END OF MAIN */
+
+/* OUR TEAM AND WHAT ARE WE DOING SECTION */
+
+.text-words {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.svg-icon {
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.word {
+  color: #2e2f42;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+.description {
+  line-height: 24px;
+  font-weight: 400;
+  color: #434455;
+  letter-spacing: 0.32px;
+  margin-left: 24px;
+}
+
+.section-title {
+  padding: 30px;
+  text-align: center;
+  color: #2e2f42;
+  letter-spacing: 0.72px;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 36px;
+  margin-bottom: 72px;
+}
+
+.images {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 120px;
+   
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+.images  :hover {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.team-member {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.image-container {
+  flex: 0 0 calc(25% - 20px);
+  text-align: center;
+  margin: 10px;
+  padding-top: 10px;
+  margin-bottom: 120px;
+  border: 1px;
+  width: 264px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.image-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.socialmedia-link {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 24px;
+}
+.instagram,
+.facebook,
+.twitter,
+.linkin {
+  background-color: var(--highlight-color);
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+/* END OF OUR TEAM AND WHAT ARE WE DOING SECTION */
+/* CUSTOMER SECTION */
+.customer-link {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
+.link {
+  height: 88px;
+  width: 168px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8e8f99;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.link:hover {
+  background-color: var(--highlight-color);
+  transition: fill 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* END OF CUSTOMER SECTION */
+/* FOOTER */
+.style-footer {
+  background-color: var(--background-color);
+  display: flex;
+  padding: 40px;
+}
+
+.style-footer div {
+  display: flex;
+}
+.logo-link-footer {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 17.5px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #f4f4fd;
+  letter-spacing: 0.34px;
+}
+.footer-socialmedia {
+  color: #f4f4fd;
+  margin-left: 100px;
+}
+
+.socialmedia-linkfooter {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 24px;
+  margin-left: 75px;
+  gap: 24px;
+  background-color: #2e2f42;
+}
+
+/* END OF FOOTER */
+
+/* End of General Styles */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.instagram:hover,
+.facebook:hover,
+.twitter:hover,
+.linkin:hover {
+  background-color: var(--button-clicked);
+  transition-duration: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.open {
+  position: relative;
+  padding: 16px 32px;
+  margin-top: 48px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--highlight-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  line-height: 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.open:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Styles for the modal */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  width: 408px;
+  height: 584px;
+  text-align: center;
+  transition: opacity 0;
+}
+.form {
+  padding-top: 50px;
+  text-align: left;
+  margin: 0%;
+}
+.form .form-text {
+  text-align: left;
+}
+.modal .close {
+  position: absolute;
+  border-width: 1px;
+  border-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  margin-left: 200px;
+  font-weight: 400;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Styles for the modal content */
