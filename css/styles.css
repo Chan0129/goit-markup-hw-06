@@ -87,9 +87,10 @@ body {
 /* MAIN */
 .main-content-area {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(/images/Daniel.jpg);
+    url(https://logarithms17.github.io/goit-markup-hw-06/css/people-office.png);
   background-size: cover;
   height: 600px;
+  padding-top: 50px;
   text-align: center;
   justify-content: center;
   justify-items: center;
