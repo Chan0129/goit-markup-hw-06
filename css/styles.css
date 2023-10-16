@@ -86,11 +86,11 @@ body {
 
 /* MAIN */
 .main-content-area {
-  background: url(/images/people-office.jpg);
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
   background-size: cover;
   height: 600px;
   text-align: center;
-  padding-top: 50px;
   justify-content: center;
   justify-items: center;
 }
