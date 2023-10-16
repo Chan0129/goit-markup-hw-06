@@ -1,3 +1,4 @@
+
 :root {
   --text-color: #434455;
   --highlight-color: #4d5ae5;
@@ -5,17 +6,17 @@
   --hover-container: #f4f4fd;
 }
 
-.navbartwo {
+.navbartwo{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  margin-top: 112px;
-  margin-bottom: 84px;
+   gap: 24px; 
+   margin-top: 112px;
+   margin-bottom: 84px;
 }
-.navbartwo-link {
+.navbartwo-link{
   padding: 12px 24px;
-
+  
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -24,7 +25,7 @@
   font-weight: 500;
   color: var(--highlight-color);
   text-align: center;
-  background-color: var(--hover-container);
+  background-color: var(--hover-container)
 }
 
 .navbartwo-link:hover {
@@ -84,7 +85,7 @@
   height: auto;
 }
 .text {
-  font-family: "Roboto", sans-serif;
+ font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.32;
   font-size: 16px;
@@ -108,11 +109,13 @@
 
 .all-list-container:hover .text {
   opacity: 1;
+ 
 }
 .all-list-container:hover {
   opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .all-list-container:hover img {
   transform: translateY(-100%);
@@ -148,4 +151,5 @@ p,
 h2 {
   text-align: left;
   padding-left: 16px;
+
 }
