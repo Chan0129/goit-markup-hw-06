@@ -8,6 +8,7 @@
 
 
 body {
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   max-width: 1440px;
 }
@@ -93,7 +94,7 @@ body {
   padding-top: 50px;
   text-align: center;
   justify-content: center;
-  justify-items: center;
+
 }
 
 .content-area {

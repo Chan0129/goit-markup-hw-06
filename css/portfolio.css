@@ -4,6 +4,12 @@
   --background-color: #2e2f42;
   --hover-container: #f4f4fd;
 }
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+}
+
 
 .navbartwo {
   display: flex;
